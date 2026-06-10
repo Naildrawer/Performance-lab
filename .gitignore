@@ -1,0 +1,24 @@
+# Maven
+spring-app/target/
+
+# IntelliJ
+.idea/
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Grafana temporary files
+grafana/
+
+# Prometheus TSDB (если когда-нибудь смонтируешь локальную папку)
+prometheus/data/
+
+# Env files
+.env
