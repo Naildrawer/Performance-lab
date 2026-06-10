@@ -14,8 +14,6 @@ spring-app/target/
 .DS_Store
 Thumbs.db
 
-# Grafana temporary files
-grafana/
 
 # Prometheus TSDB (если когда-нибудь смонтируешь локальную папку)
 prometheus/data/
