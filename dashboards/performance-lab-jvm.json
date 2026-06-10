@@ -37,7 +37,7 @@
                   "hidden": false,
                   "query": {
                     "datasource": {
-                      "name": "efoqs900u41s0c"
+                      "type": "prometheus", "uid": "prometheus"
                     },
                     "group": "prometheus",
                     "kind": "DataQuery",
@@ -156,7 +156,7 @@
                   "hidden": false,
                   "query": {
                     "datasource": {
-                      "name": "efoqs900u41s0c"
+                      "type": "prometheus", "uid": "prometheus"
                     },
                     "group": "prometheus",
                     "kind": "DataQuery",
@@ -241,7 +241,7 @@
                   "hidden": false,
                   "query": {
                     "datasource": {
-                      "name": "efoqs900u41s0c"
+                      "type": "prometheus", "uid": "prometheus"
                     },
                     "group": "prometheus",
                     "kind": "DataQuery",
@@ -326,7 +326,7 @@
                   "hidden": false,
                   "query": {
                     "datasource": {
-                      "name": "efoqs900u41s0c"
+                      "type": "prometheus", "uid": "prometheus"
                     },
                     "group": "prometheus",
                     "kind": "DataQuery",
@@ -410,7 +410,7 @@
                   "hidden": false,
                   "query": {
                     "datasource": {
-                      "name": "efoqs900u41s0c"
+                      "type": "prometheus", "uid": "prometheus"
                     },
                     "group": "prometheus",
                     "kind": "DataQuery",
@@ -528,7 +528,7 @@
                   "hidden": false,
                   "query": {
                     "datasource": {
-                      "name": "efoqs900u41s0c"
+                      "type": "prometheus", "uid": "prometheus"
                     },
                     "group": "prometheus",
                     "kind": "DataQuery",
@@ -646,7 +646,7 @@
                   "hidden": false,
                   "query": {
                     "datasource": {
-                      "name": "efoqs900u41s0c"
+                      "type": "prometheus", "uid": "prometheus"
                     },
                     "group": "prometheus",
                     "kind": "DataQuery",
@@ -731,7 +731,7 @@
                   "hidden": false,
                   "query": {
                     "datasource": {
-                      "name": "efoqs900u41s0c"
+                      "type": "prometheus", "uid": "prometheus"
                     },
                     "group": "prometheus",
                     "kind": "DataQuery",
