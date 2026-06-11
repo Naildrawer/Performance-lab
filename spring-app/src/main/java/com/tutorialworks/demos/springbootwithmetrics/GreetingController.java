@@ -47,3 +47,4 @@ public Greeting greeting(
             String.format(template, name)
     );
 }
+}
