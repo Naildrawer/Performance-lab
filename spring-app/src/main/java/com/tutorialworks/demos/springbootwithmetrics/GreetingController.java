@@ -28,14 +28,22 @@ public class GreetingController {
      * it takes to execute in Prometheus
      * percentiles
      */
-    @GetMapping("/greeting")
-    @Timed(value = "greeting.time", description = "Time taken to return greeting",
-            percentiles = {0.5, 0.90})
-    public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) { 
-	throws InterruptedException{
-	Thread.sleep(100);
-        registry.counter("greetings.counter").increment();
-        return new Greeting(counter.incrementAndGet(), String.format(template, name));
-    
+@GetMapping("/greeting")
+@Timed(
+        value = "greeting.time",
+        description = "Time taken to return greeting",
+        percentiles = {0.5, 0.90}
+)
+public Greeting greeting(
+        @RequestParam(value = "name", defaultValue = "World") String name)
+        throws InterruptedException {
 
+    Thread.sleep(100);
+
+    registry.counter("greetings.counter").increment();
+
+    return new Greeting(
+            counter.incrementAndGet(),
+            String.format(template, name)
+    );
 }
