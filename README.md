@@ -1,144 +1,86 @@
-# Performance Lab
+Performance Lab
+О проекте
 
-## Overview
+Performance Lab — лабораторный стенд для изучения мониторинга, нагрузочного тестирования и анализа производительности Java-приложений.
 
-Performance engineering laboratory for Java applications.
+Проект создан для практического изучения Performance Engineering и включает полный цикл: от генерации нагрузки до анализа JVM и производительности SQL-запросов.
 
-The project demonstrates monitoring, load testing and performance analysis using modern Java tooling.
-
----
-
-## Technology Stack
-
-* Java 17
-* Spring Boot
-* Docker
-* Docker Compose
-* Prometheus
-* Grafana
-* PostgreSQL
-* JMeter
-* Maven
-* Linux
-* Git
-
----
-
-## Architecture
-
-```
-JMeter
-    |
-    v
+Используемый стек
+Java 17
 Spring Boot
-    |
-    v
-Micrometer
-    |
-    v
+Docker
+Docker Compose
 Prometheus
-    |
-    v
 Grafana
-```
+Micrometer
+PostgreSQL
+JMeter
+Maven
+Linux
+Git
+Архитектура
 
-PostgreSQL is used for SQL performance experiments.
+JMeter
 
----
+↓
 
-## Features
+Spring Boot
 
-* JVM monitoring
-* Heap monitoring
-* Garbage Collection monitoring
-* Thread monitoring
-* Prometheus metrics
-* Grafana dashboards
-* Dashboard provisioning
-* Docker Compose deployment
-* PostgreSQL EXPLAIN ANALYZE
-* Seq Scan vs Index Scan experiments
-* Load testing with JMeter
+↓
 
----
+Micrometer
 
-## Project Structure
+↓
 
-```
-Performance-lab/
+Prometheus
 
-docker-compose.yml
+↓
 
-Makefile
+Grafana
 
-spring-app/
+PostgreSQL используется для лабораторных работ по анализу производительности SQL.
 
-grafana/
-
-prometheus/
-
-dashboards/
-
-jmeter/
-
-sql/
-
-docs/
-
-screenshots/
-```
-
----
-
-## Run
-
-```
+Что реализовано
+Мониторинг JVM через Micrometer
+Сбор метрик Prometheus
+Визуализация метрик в Grafana
+Dashboard Provisioning
+Dashboard as Code
+Нагрузочное тестирование REST API
+Анализ Heap и Garbage Collection
+Анализ Thread States
+Анализ SQL-запросов через EXPLAIN ANALYZE
+Исследование Seq Scan, Index Scan и Bitmap Index Scan
+Практические эксперименты с PostgreSQL
+Структура проекта
+spring-app — Spring Boot приложение
+prometheus — конфигурация Prometheus
+grafana — provisioning Grafana
+dashboards — готовые дашборды
+sql — лабораторные работы PostgreSQL
+docs — конспекты и заметки
+screenshots — примеры мониторинга
+jmeter — нагрузочные сценарии
+Запуск
 docker compose up -d
-```
 
-or
+или
 
-```
 make up
-```
+Основные темы проекта
+JVM
+Heap
+Garbage Collection
+Thread Dump
+Heap Dump
+Performance Testing
+Monitoring
+PostgreSQL
+SQL Performance
+EXPLAIN ANALYZE
+Docker Compose
+Grafana
+Prometheus
+Цель проекта
 
----
-
-## Useful commands
-
-```
-make up
-make down
-make restart
-make logs
-make status
-make export-dashboard
-```
-
----
-
-## PostgreSQL Experiments
-
-* EXPLAIN ANALYZE
-* Seq Scan
-* Index Scan
-* Bitmap Index Scan
-* Slow SQL
-* Query performance comparison
-
----
-
-## JVM Topics
-
-* Heap
-* Garbage Collection
-* Thread States
-* Thread Dump
-* Heap Dump basics
-* HikariCP basics
-
----
-
-## Learning Goal
-
-The purpose of this repository is practical preparation for Java Performance Engineering interviews through hands-on experiments with monitoring, profiling and load testing.
+Получение практических навыков анализа производительности Java-приложений и подготовка к позиции Performance Engineer.
